@@ -14,7 +14,6 @@ Static marketing site for the feature film **Golgotha**, a poetic horror-noir ab
 - `investors.html` &mdash; Financing overview, KPIs, and CTAs.
 - `contact.html` &mdash; Contact form and production office details.
 - `assets/css/main.css` &mdash; Shared noir-inspired styling.
-- `public/golgotha-poster-mother.svg` &mdash; Mommy Loves You teaser poster art used for hero imagery and Open Graph metadata.
 
 ## Local Preview
 
@@ -26,4 +25,13 @@ python3 -m http.server 8000
 
 Then visit `http://localhost:8000/`.
 
-To preview the teaser poster directly, open `http://localhost:8000/public/golgotha-poster-mother.svg` in a browser; the SVG scales crisply while preserving the high-contrast noir palette.
+
+## Porkbun Deployment
+
+Porkbun&rsquo;s static hosting expects your upload to unpack so that `index.html` and the other HTML files live directly at the document root. When creating a ZIP archive, ensure you compress the contents of the repository (all HTML files plus the `assets/` directory) rather than a parent folder. For example:
+
+```bash
+zip -r golgotha-site.zip index.html story.html director.html cast-crew.html gallery.html press.html screenings.html investors.html contact.html assets
+```
+
+Upload that archive to Porkbun and the platform will serve the site exactly as it appears locally.
