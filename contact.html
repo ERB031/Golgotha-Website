@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact — Golgotha</title>
-  <meta name="description" content="Contact the Golgotha film team for press, partnerships, and investment.">
+  <meta name="description" content="Contact the Golgotha team for partnerships, press, and support.">
   <meta property="og:title" content="Contact — Golgotha">
-  <meta property="og:description" content="Reach the Golgotha team for inquiries and collaborations.">
+  <meta property="og:description" content="Reach the Golgotha team for investor calls, press, and collaborations.">
   <meta property="og:image" content="/public/poster-og-placeholder.svg">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://example.com/contact.html">
@@ -34,36 +34,48 @@
   </header>
 
   <main>
-    <section class="section">
-      <div class="overline">Contact</div>
-      <h1>Step into the investigation.</h1>
+    <section class="section page-hero">
+      <div class="page-hero__content">
+        <div class="overline">Contact</div>
+        <h1>Enter the investigation.</h1>
+        <p>Reach the Golgotha team for investor conversations, press coordination, or to join the audience of early believers.</p>
+      </div>
+      <div class="page-hero__meta">
+        <span class="badge badge--glow">Response within 48 hours</span>
+        <div class="status-panel">
+          <p class="caption">Direct Email</p>
+          <a class="button" href="mailto:hello@golgothafilm.com">hello@golgothafilm.com</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--overlay">
       <div class="grid two-column" style="margin-top:2.5rem;">
         <div>
-          <form action="#" method="post">
+          <form>
             <div class="form-group">
               <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your name" required>
+              <input id="name" name="name" type="text" placeholder="Your Name">
             </div>
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              <input id="email" name="email" type="email" placeholder="you@example.com">
             </div>
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" placeholder="Tell us how you&rsquo;d like to collaborate"></textarea>
+              <textarea id="message" name="message" placeholder="Tell us how you&rsquo;d like to collaborate."></textarea>
             </div>
             <button class="button" type="submit">Send Message</button>
           </form>
         </div>
         <div>
-          <div class="card">
-            <p class="caption">Direct Line</p>
-            <p><a href="mailto:hello@golgothafilm.com">hello@golgothafilm.com</a></p>
-            <p class="caption" style="margin-top:1.5rem;">Production Office</p>
-            <p>Golgotha Film<br>1313 Nocturne Avenue<br>Suite 7<br>Los Angeles, CA 90012</p>
-            <p class="caption" style="margin-top:1.5rem;">Follow the Case</p>
-            <p><a href="https://buttondown.email/" target="_blank" rel="noopener">Buttondown Dispatch</a></p>
+          <p class="caption">Studio Address</p>
+          <div class="address-block">
+            Golgotha Film<br>
+            1111 Noir Avenue<br>
+            Los Angeles, CA 90001
           </div>
+          <p style="margin-top:2rem;">We coordinate investor calls via Cal.com and release production notes through Buttondown. Subscribe on the homepage for updates.</p>
         </div>
       </div>
     </section>
