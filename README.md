@@ -25,3 +25,5 @@ python3 -m http.server 8000
 ```
 
 Then visit `http://localhost:8000/`.
+
+To verify the Open Graph placeholder renders, open `http://localhost:8000/public/poster-og-placeholder.svg` in a browser; the text-based poster should display crisply inlined against a dark background.
