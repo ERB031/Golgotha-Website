@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 960">
+  <defs>
+    <linearGradient id="slate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d7d5cf"/>
+      <stop offset="100%" stop-color="#a5a39d"/>
+    </linearGradient>
+    <pattern id="grit" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1" fill="#999" opacity="0.4"/>
+      <circle cx="9" cy="6" r="1" fill="#777" opacity="0.5"/>
+      <circle cx="6" cy="9" r="1" fill="#bbb" opacity="0.3"/>
+    </pattern>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#141414"/>
+      <stop offset="100%" stop-color="#060606"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="960" fill="url(#slate)"/>
+  <rect x="58" y="58" width="524" height="844" fill="none" stroke="#111" stroke-opacity="0.3" stroke-width="8"/>
+  <rect x="74" y="74" width="492" height="812" fill="url(#grit)" opacity="0.45"/>
+  <path d="M118 730l186-206 214 234" fill="none" stroke="#111" stroke-width="44" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.82"/>
+  <path d="M120 320c90 10 180 90 214 140 32-54 124-140 226-150" fill="none" stroke="#111" stroke-width="44" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.85"/>
+  <path d="M120 726l184-200 216 236" fill="none" stroke="#d11c1c" stroke-width="18" stroke-linecap="round" stroke-opacity="0.7" stroke-dasharray="32 18"/>
+  <path d="M120 314c92 6 178 84 214 136 40-58 126-140 226-146" fill="none" stroke="#d11c1c" stroke-width="18" stroke-linecap="round" stroke-opacity="0.72" stroke-dasharray="32 18"/>
+  <path d="M312 456c-22-28-86-84-158-110-34-12-70-16-106-12" fill="none" stroke="#111" stroke-width="18" stroke-linecap="round" stroke-opacity="0.4"/>
+  <path d="M330 456c20-26 74-82 150-108 32-12 66-16 102-10" fill="none" stroke="#111" stroke-width="18" stroke-linecap="round" stroke-opacity="0.4"/>
+  <path d="M318 524c-32-36-96-92-182-120" fill="none" stroke="#111" stroke-width="14" stroke-opacity="0.35" stroke-linecap="round"/>
+  <path d="M326 524c32-36 104-100 184-124" fill="none" stroke="#111" stroke-width="14" stroke-opacity="0.35" stroke-linecap="round"/>
+  <path d="M326 410c-28-30-88-82-170-108" fill="none" stroke="#111" stroke-width="14" stroke-opacity="0.3" stroke-linecap="round"/>
+  <path d="M334 410c28-32 94-88 176-112" fill="none" stroke="#111" stroke-width="14" stroke-opacity="0.3" stroke-linecap="round"/>
+  <path d="M320 486c-20-28-80-86-152-110" fill="none" stroke="#111" stroke-width="12" stroke-opacity="0.36" stroke-linecap="round"/>
+  <path d="M328 486c20-28 88-94 160-118" fill="none" stroke="#111" stroke-width="12" stroke-opacity="0.36" stroke-linecap="round"/>
+  <rect x="110" y="160" width="420" height="68" fill="#141414"/>
+  <text x="120" y="210" fill="#f5f1e6" font-family="'Archivo Condensed', 'Impact', 'Arial Narrow', sans-serif" font-size="92" letter-spacing="8">GOLGOTHA</text>
+  <rect x="110" y="250" width="220" height="40" fill="#141414"/>
+  <text x="120" y="280" fill="#f5f1e6" font-family="'IBM Plex Mono', monospace" font-size="24" letter-spacing="5">A MOTION PICTURE</text>
+  <rect x="110" y="820" width="220" height="32" fill="#141414"/>
+  <text x="120" y="844" fill="#f5f1e6" font-family="'IBM Plex Mono', monospace" font-size="22" letter-spacing="6">WINTER TWENTY-TWENTY-SIX</text>
+  <text x="120" y="352" fill="#141414" font-family="'IBM Plex Mono', monospace" font-size="20" letter-spacing="6">STARRING DANIEL OAKLEY</text>
+  <text x="120" y="384" fill="#141414" font-family="'IBM Plex Mono', monospace" font-size="20" letter-spacing="6">WRITTEN BY GRACE CAROLINE CURLEY</text>
+  <text x="120" y="416" fill="#141414" font-family="'IBM Plex Mono', monospace" font-size="20" letter-spacing="6">DIRECTED BY CHRISTOPHER ROSICA</text>
+  <text x="120" y="448" fill="#141414" font-family="'IBM Plex Mono', monospace" font-size="20" letter-spacing="6">PRODUCED BY ETHAN BELLER</text>
+  <text x="120" y="480" fill="#141414" font-family="'IBM Plex Mono', monospace" font-size="20" letter-spacing="6">CASTING BY FAITH NICHOLAS</text>
+  <rect x="110" y="880" width="420" height="8" fill="#141414" opacity="0.6"/>
+</svg>
