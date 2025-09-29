@@ -1,0 +1,20 @@
+<svg width="600" height="800" viewBox="0 0 600 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-cr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#201010"/>
+      <stop offset="100%" stop-color="#3b1c1c"/>
+    </linearGradient>
+    <linearGradient id="gloss-cr" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(233,230,223,0.28)"/>
+      <stop offset="100%" stop-color="rgba(233,230,223,0)"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="600" height="800" rx="26" fill="url(#grad-cr)"/>
+  <rect x="28" y="42" width="544" height="716" rx="22" fill="#0F0F10" opacity="0.82"/>
+  <rect x="46" y="88" width="508" height="636" rx="18" fill="#1A1414"/>
+  <rect x="46" y="88" width="508" height="220" fill="url(#gloss-cr)" opacity="0.6"/>
+  <circle cx="300" cy="340" r="148" fill="#271919"/>
+  <circle cx="300" cy="330" r="108" fill="#312020"/>
+  <rect x="220" y="460" width="160" height="170" rx="70" fill="#362323"/>
+  <text x="300" y="715" font-family="'Archivo Black', 'Arial Black', sans-serif" font-size="64" fill="#E9E6DF" text-anchor="middle" letter-spacing="12">CR</text>
+</svg>

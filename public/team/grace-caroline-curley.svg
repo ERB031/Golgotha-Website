@@ -1,0 +1,20 @@
+<svg width="600" height="800" viewBox="0 0 600 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-gc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1b181f"/>
+      <stop offset="100%" stop-color="#301226"/>
+    </linearGradient>
+    <radialGradient id="halo-gc" cx="0.5" cy="0.3" r="0.7">
+      <stop offset="0%" stop-color="rgba(233,230,223,0.25)"/>
+      <stop offset="100%" stop-color="rgba(233,230,223,0)"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="800" rx="26" fill="url(#grad-gc)"/>
+  <rect x="32" y="48" width="536" height="704" rx="24" fill="#0C0B0D" opacity="0.88"/>
+  <rect x="52" y="96" width="496" height="624" rx="20" fill="#181016"/>
+  <rect x="52" y="96" width="496" height="320" fill="url(#halo-gc)"/>
+  <ellipse cx="300" cy="320" rx="136" ry="140" fill="#26141E"/>
+  <ellipse cx="300" cy="312" rx="100" ry="110" fill="#341B27"/>
+  <rect x="232" y="454" width="136" height="168" rx="64" fill="#3B1E2C"/>
+  <text x="300" y="712" font-family="'Archivo Black', 'Arial Black', sans-serif" font-size="60" fill="#E9E6DF" text-anchor="middle" letter-spacing="10">GCC</text>
+</svg>
