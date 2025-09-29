@@ -7,6 +7,7 @@
   <meta name="description" content="DAVID HILL, a jaded detective, wrestles with existential angst while investigating surreal and supernatural crimes.">
   <meta property="og:title" content="Golgotha — Poetic Horror-Noir Feature Film">
   <meta property="og:description" content="DAVID HILL, a jaded detective, wrestles with existential angst while investigating surreal and supernatural crimes.">
+  <!-- Open Graph image placeholder until final poster art is ready -->
   <meta property="og:image" content="/public/poster-og-placeholder.svg">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://example.com/">
@@ -51,11 +52,19 @@
         </div>
       </div>
       <div class="hero-media">
-        <div class="hero-frame">
-          <div class="hero-poster">
-            <span>Poster reveal coming soon</span>
+        <div class="hero-frame hero-frame--flip">
+          <div class="poster-flip" tabindex="0" aria-label="Flip between the two Golgotha posters" aria-describedby="poster-instruction">
+            <figure class="poster-face poster-face--front">
+              <img src="public/golgotha-poster-mother.svg" alt="Golgotha poster showing a bone-white hand reaching from darkness beside the tagline Mommy Loves You.">
+              <figcaption>Poster I &mdash; Mommy Loves You</figcaption>
+            </figure>
+            <figure class="poster-face poster-face--back">
+              <img src="public/golgotha-poster-relic.svg" alt="Golgotha key art featuring fingerprint impressions forming a cruciform blueprint.">
+              <figcaption>Poster II &mdash; Relic Index</figcaption>
+            </figure>
           </div>
         </div>
+        <p class="hero-instruction" id="poster-instruction">Hover or focus to reveal both posters.</p>
         <div class="status-panel">
           <p class="caption">Investment Hooks</p>
           <strong>Elevated horror noir</strong>
