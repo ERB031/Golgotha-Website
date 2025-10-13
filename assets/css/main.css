@@ -53,7 +53,7 @@ h1, h2, h3, h4 {
     height: 100%;
     object-fit: cover;
     transform: translate(-50%, -50%);
-    z-index: -1;
+    z-index: 0;
 }
 
 #hero .logo {
@@ -95,10 +95,19 @@ main {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 20px;
+    text-align: center;
 }
 
 section {
     padding: 50px 0;
+}
+
+#teaser video {
+    width: 100%;
+    max-width: 800px;
+    border: 2px solid var(--blood-crimson);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
 }
 
 #synopsis h3 {
