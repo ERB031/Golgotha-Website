@@ -8,9 +8,28 @@
 </head>
 <body>
 
+    <div id="site-nav">
+        <div class="brand">
+            <img src="assets/images/golgotha-logo.png" alt="Golgotha wordmark">
+            <span>Golgotha</span>
+        </div>
+        <nav>
+            <a href="index.html" data-page="index">Home</a>
+            <a href="investors.html" data-page="investors">Invest</a>
+        </nav>
+    </div>
+
     <header id="hero">
-        <video autoplay loop muted playsinline controls id="hero-video">
-            <source src="assets/videos/Teaser (Super Rough)-HD 1080p.mp4" type="video/mp4">
+        <video
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="auto"
+            id="hero-video"
+            poster="assets/images/golgotha-logo.png"
+        >
+            <source src="assets/videos/teaser_3.mp4" type="video/mp4">
         </video>
         <img src="assets/images/golgotha-logo.png" alt="Golgotha Logo" class="logo hidden">
     </header>
@@ -83,6 +102,7 @@
         <p>&copy; 2025 Golgotha Film, LLC. All rights reserved.</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.13/dist/hls.min.js" defer></script>
     <script src="assets/js/main.js" defer></script>
 </body>
 </html>

@@ -1,17 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
     const heroVideo = document.getElementById('hero-video');
     const logo = document.querySelector('.logo');
-    const triggerPoint = 100; // Pixels to scroll before fade-in
+    const siteNav = document.getElementById('site-nav');
+    const heroSection = document.getElementById('hero');
+    const navLinks = document.querySelectorAll('#site-nav nav a');
+
+    const playMuted = () => {
+        if (!heroVideo) return;
+        heroVideo.muted = true;
+        heroVideo.playsInline = true;
+        heroVideo.loop = true;
+        heroVideo.play().catch(() => {});
+    };
 
     const bootstrapHeroVideo = () => {
         if (!heroVideo) return;
 
         const hlsSrc = heroVideo.dataset.hlsSrc;
+        const mp4Src = heroVideo.dataset.mp4Src;
         const canPlayHlsNatively = heroVideo.canPlayType('application/vnd.apple.mpegurl');
 
         if (canPlayHlsNatively && hlsSrc) {
             heroVideo.src = hlsSrc;
-            heroVideo.play().catch(() => {});
+            heroVideo.addEventListener('loadedmetadata', playMuted, { once: true });
+            heroVideo.load();
             return;
         }
 
@@ -22,8 +34,23 @@ document.addEventListener('DOMContentLoaded', () => {
             hls.loadSource(hlsSrc);
             hls.attachMedia(heroVideo);
             hls.on(window.Hls.Events.MANIFEST_PARSED, () => {
-                heroVideo.play().catch(() => {});
+                playMuted();
             });
+            hls.on(window.Hls.Events.ERROR, (event, data) => {
+                if (data?.fatal && mp4Src) {
+                    hls.destroy();
+                    heroVideo.src = mp4Src;
+                    heroVideo.addEventListener('loadedmetadata', playMuted, { once: true });
+                    heroVideo.load();
+                }
+            });
+            return;
+        }
+
+        if (mp4Src) {
+            heroVideo.src = mp4Src;
+            heroVideo.addEventListener('loadedmetadata', playMuted, { once: true });
+            heroVideo.load();
         }
     };
 
@@ -34,18 +61,41 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    // Hide logo on load
-    if (logo) {
-        logo.classList.add('hidden');
-    }
+    const setActiveNavLink = () => {
+        if (!navLinks.length) return;
 
-    const handleScroll = () => {
-        if (window.scrollY > triggerPoint) {
-            revealLogo();
-            window.removeEventListener('scroll', handleScroll);
-        }
+        const path = window.location.pathname.split('/').pop() || 'index.html';
+        const normalized = path === '' ? 'index' : path.replace('.html', '') || 'index';
+
+        navLinks.forEach((link) => {
+            const pageKey = link.dataset.page;
+            link.classList.toggle('active', pageKey === normalized);
+        });
+    };
+
+    const watchHeroVisibility = () => {
+        if (!siteNav || !heroSection) return;
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        siteNav.classList.remove('visible');
+                    } else {
+                        siteNav.classList.add('visible');
+                    }
+                });
+            },
+            {
+                threshold: 0.1,
+            }
+        );
+
+        observer.observe(heroSection);
     };
 
     bootstrapHeroVideo();
-    window.addEventListener('scroll', handleScroll);
+    revealLogo();
+    setActiveNavLink();
+    watchHeroVisibility();
 });
