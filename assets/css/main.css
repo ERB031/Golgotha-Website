@@ -122,11 +122,8 @@ h1, h2, h3, h4 {
     z-index: 1;
     max-width: 50%;
     height: auto;
-    transition: opacity 0.5s ease-in-out;
-}
-
-#hero .logo.hidden {
     opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 #tagline h2 {
@@ -169,6 +166,22 @@ section {
     max-width: 800px;
     padding: 50px 0;
     margin: 0 auto;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 32px;
+    text-align: left;
+}
+
+.team-grid h3 {
+    color: var(--blood-crimson);
+    margin-bottom: 12px;
+}
+
+.team-grid p {
+    margin: 0;
 }
 
 #synopsis h3 {

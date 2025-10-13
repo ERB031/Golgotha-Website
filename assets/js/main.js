@@ -15,50 +15,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const bootstrapHeroVideo = () => {
         if (!heroVideo) return;
-
-        const hlsSrc = heroVideo.dataset.hlsSrc;
-        const mp4Src = heroVideo.dataset.mp4Src;
-        const canPlayHlsNatively = heroVideo.canPlayType('application/vnd.apple.mpegurl');
-
-        if (canPlayHlsNatively && hlsSrc) {
-            heroVideo.src = hlsSrc;
-            heroVideo.addEventListener('loadedmetadata', playMuted, { once: true });
-            heroVideo.load();
-            return;
-        }
-
-        if (window.Hls && window.Hls.isSupported() && hlsSrc) {
-            const hls = new window.Hls({
-                autoStartLoad: true,
-            });
-            hls.loadSource(hlsSrc);
-            hls.attachMedia(heroVideo);
-            hls.on(window.Hls.Events.MANIFEST_PARSED, () => {
-                playMuted();
-            });
-            hls.on(window.Hls.Events.ERROR, (event, data) => {
-                if (data?.fatal && mp4Src) {
-                    hls.destroy();
-                    heroVideo.src = mp4Src;
-                    heroVideo.addEventListener('loadedmetadata', playMuted, { once: true });
-                    heroVideo.load();
-                }
-            });
-            return;
-        }
-
-        if (mp4Src) {
-            heroVideo.src = mp4Src;
-            heroVideo.addEventListener('loadedmetadata', playMuted, { once: true });
-            heroVideo.load();
-        }
+        playMuted();
     };
 
-    const revealLogo = () => {
+    const initScrollLogoFade = () => {
         if (!logo) return;
-        requestAnimationFrame(() => {
-            logo.classList.remove('hidden');
-        });
+        let ticking = false;
+
+        const updateOpacity = () => {
+            const scrollTop = window.scrollY || document.documentElement.scrollTop || 0;
+            const threshold = Math.max(window.innerHeight * 0.6, 1);
+            const progress = Math.min(Math.max(scrollTop / threshold, 0), 1);
+            logo.style.opacity = progress.toString();
+        };
+
+        const handleScroll = () => {
+            if (ticking) return;
+            ticking = true;
+            requestAnimationFrame(() => {
+                updateOpacity();
+                ticking = false;
+            });
+        };
+
+        logo.style.opacity = '0';
+        updateOpacity();
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        window.addEventListener('resize', updateOpacity);
     };
 
     const setActiveNavLink = () => {
@@ -95,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     bootstrapHeroVideo();
-    revealLogo();
+    initScrollLogoFade();
     setActiveNavLink();
     watchHeroVisibility();
 });
