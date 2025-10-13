@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Special+Elite&display=swap');
 
 :root {
@@ -90,10 +91,14 @@ h1, h2, h3, h4 {
     color: var(--ash-black);
 }
 
-section {
-    padding: 50px 20px;
+main {
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 50px 0;
 }
 
 #synopsis h3 {
