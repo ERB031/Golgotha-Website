@@ -98,9 +98,9 @@ holds a degree in Broadcasting and
 Cinema from Oswego
 State University. During her time at Oswego, she worked for American High Studios, one of the most popular comedy channels on TikTok, boasting over 2.5 million followers.
 
-Brian Mortenson
+Brian Mortensen
 Executive Producer
-Brian Mortenson is an experienced director, producer, and filmaker whos using his decades of experience to help guide this project. His short films have played in national and international festivals.
+Brian Mortensen is an experienced director, producer, and filmmaker whose decades of experience help guide this project. His short films have played in national and international festivals.
 
 Director's statement: CINEMA IS MADE OF THE FABRIC OF THE UNIVERSE - LIGHT, SOUND, AND TIME. THEREFORE, IT IS THE PERFECT ART FORM TO TELL A STORY WITH SUCH EXISTENTIAL WEIGHT.
 MY APPROACH TO FILMMAKING IS A LITTLE DIFFERENT THAN SOME. MY BACKGROUND IS IN THE AVANT-GARDE, AND SO I LIKE TO THINK OF A FILM AS SOMETHING BETWEEN A MOVING PAINTING AND A SYMPHONY. EVERY SINGLE SHOT MUST BE HANDLED WITH THE SAME ATTENTION TO DETAIL THAT AN ARTIST WOULD APPROACH A CANVAS. EVERY FRAME MUST BE A PAINTING. ANYTHING IN THE
