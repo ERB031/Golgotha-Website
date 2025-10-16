@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
 
 :root {
     --golgotha-gold: #D4AF37;
@@ -14,7 +14,7 @@ body {
     position: relative;
     background-color: var(--ash-black);
     color: var(--bone-white);
-    font-family: 'Lato', sans-serif;
+    font-family: 'Big Shoulders Display', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -34,7 +34,7 @@ body::before {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Special Elite', sans-serif;
+    font-family: 'Big Shoulders Display', sans-serif;
 }
 
 #site-nav {
@@ -61,8 +61,7 @@ h1, h2, h3, h4 {
 #site-nav .brand {
     display: flex;
     align-items: center;
-    gap: 12px;
-    font-family: 'Special Elite', sans-serif;
+    font-family: 'Big Shoulders Display', sans-serif;
     font-size: 1.1rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -138,7 +137,7 @@ h1, h2, h3, h4 {
     background-color: var(--blood-crimson);
     color: var(--bone-white);
     text-decoration: none;
-    font-family: 'Special Elite', sans-serif;
+    font-family: 'Big Shoulders Display', sans-serif;
     font-weight: bold;
     border-radius: 5px;
     transition: background-color 0.3s ease;
