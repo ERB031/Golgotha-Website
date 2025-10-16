@@ -1,6 +1,26 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
 
+@font-face {
+    font-family: '29LT Makina';
+    src: local('29LT Makina Regular'), local('29LT Makina'),
+         url('../fonts/29lt-makina-regular.woff2') format('woff2'),
+         url('../fonts/29lt-makina-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '29LT Makina';
+    src: local('29LT Makina Bold'), local('29LT Makina 700'),
+         url('../fonts/29lt-makina-bold.woff2') format('woff2'),
+         url('../fonts/29lt-makina-bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --golgotha-gold: #D4AF37;
     --ash-black: #000000;
@@ -34,7 +54,7 @@ body::before {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Big Shoulders Display', sans-serif;
+    font-family: '29LT Makina', 'Big Shoulders Display', sans-serif;
 }
 
 #site-nav {
