@@ -245,6 +245,18 @@ section {
     gap: 32px;
     text-align: left;
 }
+.team-grid article {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-member-photo {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin-bottom: 16px;
+    border-radius: 4px;
+}
 
 .team-grid h3 {
     color: var(--blood-crimson);
