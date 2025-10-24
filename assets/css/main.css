@@ -243,20 +243,22 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 32px;
-    text-align: left;
+    text-align: center;
 }
 .team-grid article {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .team-member-photo {
-    width: 100%;
-    aspect-ratio: 1 / 1;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     object-position: center;
-    margin-bottom: 16px;
+    margin: 0 auto 16px auto;
     border-radius: 4px;
+    display: block;
 }
 
 .team-grid h3 {
