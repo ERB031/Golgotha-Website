@@ -40,19 +40,6 @@ body {
     text-align: center;
 }
 
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    pointer-events: none;
-    background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"%3E%3Cfilter id="noise"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%" height="100%" filter="url(%23noise)"/%3E%3C/svg%3E');
-    opacity: 0.05;
-    z-index: -1;
-}
-
 h1, h2, h3, h4 {
     font-family: '29LT Makina', 'Big Shoulders Display', sans-serif;
 }
@@ -282,4 +269,62 @@ footer {
     padding: 20px;
     margin-top: 50px;
     color: var(--shadow-gray);
+}
+
+/* Social Media Footer */
+.social-footer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 12px;
+    z-index: 5;
+    flex-direction: row;
+    align-items: center;
+}
+
+.social-footer a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(122, 12, 16, 0.1);
+    border: 2px solid var(--blood-crimson);
+    color: var(--blood-crimson);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 20px;
+}
+
+.social-footer a:hover {
+    background-color: var(--blood-crimson);
+    color: var(--bone-white);
+    transform: scale(1.1);
+}
+
+.social-footer svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+
+@media (max-width: 768px) {
+    .social-footer {
+        bottom: 16px;
+        right: 16px;
+        gap: 10px;
+    }
+
+    .social-footer a {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+    }
+
+    .social-footer svg {
+        width: 16px;
+        height: 16px;
+    }
 }
